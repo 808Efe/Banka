@@ -1,18 +1,20 @@
 from time import sleep
 
 
-kartsifre = 1234
+kartsifre = int(input("Kart şifrenizi belirleyiniz : "))
 giris = False
-
 
 while True:
     if giris == False:
         sifre = int(input("Şifrenizi giriniz : "))
-    if sifre == kartsifre:
-        giris == True
-        break
+        if sifre == kartsifre:
+            giris == True
+            break
 
 print("Hoşgeldiniz!")
+
+sleep(0.5)
+
 print("Bankaya yönlendiriliyorsunuz...")
 
 sleep(3)
